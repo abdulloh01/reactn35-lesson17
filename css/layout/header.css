@@ -1,0 +1,84 @@
+.header__nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links {
+    display: none;
+}
+
+.links__ul {
+    display: flex;
+    gap: 40px;
+}
+
+.links__li a {
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.links__li a:hover {
+    color: #F53855;
+}
+
+.nav__btn :is(.nav__btn1, .nav__btn2) {
+    display: none;
+}
+
+.nav__btn button {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav__btn1 {
+    color: #0B132A;
+    border: none;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.nav__btn1:hover {
+    color: #F53855;
+}
+
+.nav__btn2 {
+    margin-left: 30px;
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid #F53855;
+    color: #F53855;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.nav__btn2:hover {
+    color: #fff;
+    background-color: #4F5665;
+    border-color: #4F5665;
+}
+
+.nav__menu {
+    border: none;
+    border-radius: none;
+    background-color: #fff;
+}
+
+@media(min-width:1000px) {
+    .nav__links {
+        display: block;
+    }
+
+    .nav__btn :is(.nav__btn1, .nav__btn2) {
+        display: inline-block;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+}

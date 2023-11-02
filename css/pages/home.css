@@ -1,0 +1,219 @@
+@import url(../base/reset.css);
+@import url(../layout/header.css);
+@import url(../layout/container.css);
+@import url(../base/fonts.css);
+
+.section__home {
+    display: flex;
+}
+
+.home__header h1 {
+    max-width: 555px;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    color: #0B132A;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 70px;
+}
+
+.vpn-text {
+    color: #0B132A;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.home__header h4 {
+    max-width: 555px;
+    margin-bottom: 60px;
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.home__img img {
+    margin-top: 88px;
+    display: none;
+}
+
+.home__header button {
+    width: 250px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    border-radius: 10px;
+    color: #FFF;
+    border: none;
+    background: #F53838;
+}
+
+.about__row {
+    margin-top: 104px;
+    margin-bottom: 150px;
+    padding: 50px 80px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about__card {
+    text-align: center;
+}
+
+.card-2 {
+    border-left: 1px solid #EEEFF2;
+    border-right: 1px solid #EEEFF2;
+}
+
+.features__sec {
+    margin-bottom: 215px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features__ul {
+    list-style-image: url(../../assets/images/tick.svg);
+}
+
+.features__header h2 {
+    margin-bottom: 20px;
+    max-width: 383px;
+    color: #0B132A;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.features__header p {
+    margin-bottom: 20px;
+    max-width: 427px;
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.features__ul li {
+    color: #4F5665;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.features__img img {
+    margin-top: -80px;
+    display: none;
+}
+
+.shoose-plan__header h2 {
+    color: #0B132A;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.shoose-plan__header p {
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 555px;
+    color: #4F5665;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.plan__card {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #DDD;
+    background: #FFF;
+    transition: 0.5s;
+}
+
+.plan__card:hover {
+    border: 2px solid #F53838;
+}
+
+.plan__card img {
+    padding-top: 80px;
+    margin-bottom: 30px;
+}
+
+.plan__card h3 {
+    color: #0B132A;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.plan__ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #4F5665;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.plan__card ul {
+    margin-bottom: 130px;
+    list-style-image: url('../../assets/images/tick2.svg');
+}
+
+.plan__card h4 {
+    color: #0B132A;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.plan__btn button {
+    width: 177.876px;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid #F53838;
+    color: #F53838;
+    font-size: 16px;
+    background-color: #fff;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.plan__card button:hover {
+    background-color: #F53838;
+    color: #fff;
+}
+
+.plan__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.choose-plan__sec {
+    margin-bottom: 150px;
+}
+
+@media(min-width:1000px) {
+    .home__img img {
+        display: inline-block;
+    }
+
+    .features__img img {
+        display: block;
+    }
+}
